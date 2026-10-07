@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: Inter, "Segoe UI", sans-serif;
+    color: #1f2937;
+    background: #f6f3ef;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f6f3ef;
+    background-image:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.85), transparent 38%),
+        radial-gradient(circle at bottom right, rgba(224, 208, 188, 0.20), transparent 32%),
+        linear-gradient(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18)),
+        repeating-linear-gradient(0deg,
+            rgba(18, 20, 24, 0.02),
+            rgba(18, 20, 24, 0.02) 1px,
+            transparent 1px,
+            transparent 5px);
+    color: #111827;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 20px 55px rgba(17, 24, 39, 0.08);
+}
+
+.soft-ring {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6), 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #111827 0%, #5c4a3f 50%, #9a7d5d 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
